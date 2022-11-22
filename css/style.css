@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -20,6 +25,9 @@
 .nav__menu {
   display: flex;
   column-gap: 24px;
+}
+.nav__menu-burger {
+  display: none;
 }
 .nav__menu-item--link {
   transition: all 0.2s;
@@ -61,12 +69,37 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 1200px) {
+  .nav {
+    justify-content: space-evenly;
+  }
+  .nav__menu {
+    display: none;
+  }
+  .nav__menu-burger {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav__contacts {
+    display: none;
+  }
+  .nav__contacts-block {
+    display: none;
+  }
+  .nav__contacts-btn {
+    display: none;
+  }
+}
 .banner {
   background-image: url(/images/header/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 979px;
 }
 .banner__title {
   font-family: "Play";
@@ -77,7 +110,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
-  padding-top: 200px;
+  padding-top: 300px;
   padding-bottom: 24px;
 }
 .banner__disc {
@@ -102,4 +135,31 @@
   background-color: #fff;
   text-decoration: none;
   border-radius: 6px;
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    min-height: 733px;
+  }
+  .banner__title {
+    padding-top: 161px;
+    max-width: 702px;
+  }
+}
+@media (max-width: 700px) {
+  .banner__title {
+    font-size: 26px;
+    line-height: 30px;
+    max-width: 290px;
+  }
+  .banner__disc {
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 290px;
+  }
+}
+@media (max-width: 340px) {
+  .banner__btn {
+    padding: 15px 53px;
+  }
 }/*# sourceMappingURL=style.css.map */
