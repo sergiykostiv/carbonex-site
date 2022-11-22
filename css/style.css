@@ -1,0 +1,105 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.nav a {
+  color: #000;
+  text-decoration: none;
+}
+.nav__menu {
+  display: flex;
+  column-gap: 24px;
+}
+.nav__menu-item--link {
+  transition: all 0.2s;
+}
+.nav__menu-item--link:hover {
+  border-bottom: solid 2px #000;
+}
+.nav__contacts {
+  display: flex;
+  column-gap: 50px;
+}
+.nav__contacts-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.nav__contacts-block--tell {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding-bottom: 5px;
+}
+.nav__contacts-block--link {
+  opacity: 0.5;
+  border-bottom: dashed 3px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+.nav__contacts-btn {
+  display: flex;
+  align-items: center;
+  padding: 15px 27px;
+  border: solid 1px #000;
+  border-radius: 6px;
+  font-family: "Play";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.banner {
+  background-image: url(/images/header/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.banner__title {
+  font-family: "Play";
+  max-width: 803px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 200px;
+  padding-bottom: 24px;
+}
+.banner__disc {
+  font-family: "Noto Sans";
+  max-width: 684px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  padding-bottom: 39px;
+}
+.banner__btn {
+  font-family: "Play";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #323232;
+  padding: 15px 73px;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}/*# sourceMappingURL=style.css.map */
