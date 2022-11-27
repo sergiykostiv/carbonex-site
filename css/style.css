@@ -162,4 +162,64 @@
   .banner__btn {
     padding: 15px 53px;
   }
+}
+.industries {
+  padding: 80px 0;
+}
+.industries__title {
+  padding-bottom: 10px;
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 141%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.industries__subtitle {
+  max-width: 920px;
+  margin: 0 auto;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.industries__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 110px;
+}
+.industries__item {
+  max-width: 190px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.industries__item-img {
+  padding-top: 10px;
+}
+.industries__item-title {
+  padding-top: 10px;
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.industries__item-link {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  text-decoration: none;
+  border-bottom: dashed 3px rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */
