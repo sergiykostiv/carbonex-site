@@ -175,7 +175,7 @@
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
     .banner {
         &__title {
             font-size: 26px;
@@ -193,7 +193,7 @@
     }
 }
 
-@media (max-width: 340px){
+@media (max-width: 320px){
     .banner {
         &__btn {
             padding: 15px 53px;
@@ -231,7 +231,8 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        column-gap: 110px
+        column-gap: 110px;
+        row-gap: 70px;
     }
 
     &__item {
@@ -265,6 +266,176 @@
             color: #323232;
             text-decoration: none;
             border-bottom: dashed 3px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .industries {
+    
+        &__title {
+            font-size: 28px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        &__item {
+    
+            &-title {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &-link {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+.products {
+
+    &__title {
+        text-align: center;
+        padding-bottom: 36px;
+        font-family: 'Play';
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 48px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    &__item {
+        background-image: url('/images/main/product/bground1.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #fff;
+        min-height: 300px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+
+        &-text {
+            padding: 24px;
+        }
+
+        &-title {
+            font-family: 'Play';
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 25px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+
+        &-subtitle {
+            font-family: 'Noto Sans';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 397px;
+        }
+
+        &-btn {
+            display: flex;
+        
+            &--link {
+                display: flex;
+                align-items: center;
+                background: #007FA7;
+                border-radius: 0px 0px 0px 6px;
+                color: #fff;
+                text-decoration: none;
+                padding: 15px 108px;
+                font-family: 'Play';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                
+            }
+
+            &--arrow {
+                display: flex;
+                align-items: center;
+                background: #006F92;
+                border-radius: 0px 0px 6px 0px;
+                padding: 15px 17px;
+            }
+        }
+    }
+
+    &__item_2 {
+        background-image: url('/images/main/product/bground2.jpg');
+    }
+
+    &__item_3 {
+        background-image: url('/images/main/product/bground3.jpg');
+    }
+}
+
+@media (max-width: 768px){
+    .products {
+
+        &__item {
+            min-height: 247px;
+
+            &-btn {
+
+                &--link {
+                    padding: 15px 68px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
+    .products {
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__item {
+
+            &-title {
+                font-size: 16px;
+                line-height: 19px;
+            }
+    
+            &-subtitle {
+                font-size: 14px;
+                line-height: 19px;
+            }
+
+            &-btn {
+
+                &--link {
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 12px 42px;
+                }
+            }
         }
     }
 }
