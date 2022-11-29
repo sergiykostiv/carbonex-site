@@ -242,6 +242,9 @@
     line-height: 19px;
   }
 }
+.products {
+  padding-bottom: 70px;
+}
 .products__title {
   text-align: center;
   padding-bottom: 36px;
@@ -255,6 +258,7 @@
 .products__blocks {
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 30px;
   flex-wrap: wrap;
   row-gap: 30px;
@@ -344,6 +348,96 @@
   .products__item-btn--link {
     font-size: 14px;
     line-height: 16px;
-    padding: 12px 42px;
+    padding: 12px 40px;
+  }
+}
+.advantages {
+  padding-bottom: 80px;
+}
+.advantages__title {
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 38px;
+}
+.advantages__bg-img {
+  display: flex;
+  align-items: center;
+  background-image: url("/images/main/advantages/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 224px;
+}
+.advantages__blocks {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 32px;
+  padding: 55px 0 75px 0;
+  flex-wrap: wrap;
+}
+.advantages__item {
+  color: #fff;
+}
+.advantages__item-top {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding-bottom: 12px;
+}
+.advantages__item-top--title {
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.advantages__item-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 445px;
+}
+
+@media (max-width: 1280px) {
+  .advantages__bg-img {
+    background-image: url("/images/main/advantages/bg-768.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (max-width: 768px) {
+  .advantages__item-top {
+    padding-bottom: 17px;
+    justify-content: center;
+  }
+  .advantages__blocks {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .advantages__title {
+    font-size: 28px;
+    line-height: 48px;
+    padding: 30px;
+  }
+  .advantages__item-top--title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .advantages__item-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .advantages__blocks {
+    padding: 30px 15px;
   }
 }/*# sourceMappingURL=style.css.map */

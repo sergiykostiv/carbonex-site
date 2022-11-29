@@ -7,6 +7,7 @@
 }
 
 @media (max-width: 1200px){
+
     .container {
         padding: 0 15px;
     }
@@ -84,6 +85,7 @@
 }
 
 @media (max-width: 1200px){
+
     .nav {
         justify-content: space-evenly;
         &__menu {
@@ -96,6 +98,7 @@
 }
 
 @media (max-width: 700px){
+
     .nav {
         justify-content: space-between;
         
@@ -161,6 +164,7 @@
 }
 
 @media (max-width: 1200px){
+
     .banner {
         min-height: 733px;
 
@@ -176,6 +180,7 @@
 }
 
 @media (max-width: 768px){
+
     .banner {
         &__title {
             font-size: 26px;
@@ -194,6 +199,7 @@
 }
 
 @media (max-width: 320px){
+
     .banner {
         &__btn {
             padding: 15px 53px;
@@ -271,6 +277,7 @@
 }
 
 @media (max-width: 320px){
+
     .industries {
     
         &__title {
@@ -299,6 +306,8 @@
 
 .products {
 
+    padding-bottom: 70px;
+
     &__title {
         text-align: center;
         padding-bottom: 36px;
@@ -313,6 +322,7 @@
     &__blocks {
         display: flex;
         justify-content: center;
+        align-items: center;
         column-gap: 30px;
         flex-wrap: wrap;
         row-gap: 30px;
@@ -393,6 +403,7 @@
 }
 
 @media (max-width: 768px){
+    
     .products {
 
         &__item {
@@ -433,9 +444,133 @@
                 &--link {
                     font-size: 14px;
                     line-height: 16px;
-                    padding: 12px 42px;
+                    padding: 12px 40px;
                 }
             }
+        }
+    }
+}
+
+.advantages {
+    padding-bottom: 80px;
+
+    &__title {
+        font-family: 'Play';
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 38px;
+    }
+
+    &__bg-img {
+        display: flex;
+        align-items: center;
+        background-image: url('/images/main/advantages/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 224px;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 32px;
+        padding: 55px 0 75px 0;
+        flex-wrap: wrap;   
+    }
+
+    &__item {
+        color: #fff;
+
+        &-top {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            padding-bottom: 12px;
+
+            &--title {
+                font-family: 'Play';
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 25px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+            }
+        }
+        
+        &-text {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 445px;
+        }
+    }
+}
+
+@media (max-width: 1280px){
+
+    .advantages {
+        &__bg-img {
+            background-image: url('/images/main/advantages/bg-768.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+    .advantages {        
+
+        &__item {
+            
+            &-top {
+                padding-bottom: 17px;
+                justify-content: center;
+            }
+        }
+
+        &__blocks {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
+    .advantages {
+
+        &__title {
+            font-size: 28px;
+            line-height: 48px;
+            padding: 30px;
+        }
+
+        &__item {
+    
+            &-top {
+    
+                &--title {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+            
+            &-text {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+        &__blocks {
+            padding: 30px 15px;
         }
     }
 }
