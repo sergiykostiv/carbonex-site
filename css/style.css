@@ -440,4 +440,54 @@
   .advantages__blocks {
     padding: 30px 15px;
   }
+}
+.about {
+  padding-bottom: 80px;
+}
+.about__title {
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 36px;
+}
+.about__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 32px;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+@media (max-width: 1280px) {
+  .about__box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__img {
+    max-width: 803px;
+  }
+  .about__img-picture {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .about__text {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }/*# sourceMappingURL=style.css.map */
