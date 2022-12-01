@@ -490,4 +490,87 @@
     font-size: 14px;
     line-height: 19px;
   }
+}
+.news {
+  padding-bottom: 80px;
+}
+.news__title {
+  font-family: "Play";
+  font-size: 34px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 36px;
+}
+.news__blocks {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.news__item_4 {
+  display: none;
+}
+.news__item {
+  max-width: 445px;
+}
+.news__item-img {
+  padding-bottom: 24px;
+}
+.news__item-title {
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.news__item-subtitle {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 24px;
+}
+.news__item-btn {
+  display: flex;
+}
+.news__item-btn--link {
+  display: flex;
+  padding: 15px 145px;
+  background: #007FA7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px 0px 0px 6px;
+  font-family: "Play";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.news__item-btn--arrow {
+  display: flex;
+  align-items: center;
+  background: #006F92;
+  border-radius: 0px 0px 6px 0px;
+  padding: 15px 17px;
+}
+
+@media (max-width: 1280px) {
+  .news__blocks {
+    column-gap: 30px;
+    row-gap: 36px;
+  }
+  .news__item_4 {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .news__item {
+    max-width: 260px;
+  }
 }/*# sourceMappingURL=style.css.map */
