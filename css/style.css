@@ -571,6 +571,142 @@
 }
 @media (max-width: 768px) {
   .news__item {
-    max-width: 260px;
+    max-width: 354px;
+  }
+}
+.contact {
+  padding: 80px 0;
+  background: #f7f7f7;
+}
+.contact__title {
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 36px;
+}
+.contact__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 32px;
+}
+.contact__text-btn {
+  display: flex;
+}
+.contact__text-btn--link {
+  display: flex;
+  padding: 15px 145px;
+  background: #007FA7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px 0px 0px 6px;
+  font-family: "Play";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.contact__text-btn--arrow {
+  display: flex;
+  align-items: center;
+  background: #006F92;
+  border-radius: 0px 0px 6px 0px;
+  padding: 15px 17px;
+}
+.contact__text-title {
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #323232;
+  opacity: 0.5;
+  padding-bottom: 32px;
+}
+.contact__text-box {
+  display: flex;
+  column-gap: 24px;
+  padding-bottom: 32px;
+}
+.contact__text-dots {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.54;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  list-style: none;
+}
+.contact__text-list {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  list-style: none;
+}
+.contact__map {
+  max-width: 803px;
+}
+.contact__map-item {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .contact__box {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 320px) {
+  .contact {
+    padding: 50px 0;
+  }
+  .contact__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .contact__text-btn--link {
+    padding: 15px 50px;
+  }
+  .contact__text-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .contact__text-box {
+    display: flex;
+    column-gap: 24px;
+    padding-bottom: 32px;
+  }
+  .contact__text-dots {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .contact__text-list {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .contact__map {
+    max-width: 803px;
+  }
+  .contact__map-item {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
