@@ -135,6 +135,7 @@
   background-color: #fff;
   text-decoration: none;
   border-radius: 6px;
+  transition: all 0.3s;
 }
 
 @media (max-width: 1200px) {
@@ -709,4 +710,57 @@
   .contact__map-item {
     width: 100%;
   }
+}
+.footer {
+  background: #323232;
+  padding: 25px 0;
+}
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__top-logo {
+  padding-bottom: 18px;
+}
+.footer__top-rights {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  opacity: 0.5;
+}
+.footer__midle {
+  display: flex;
+  flex-direction: column;
+  min-width: 705px;
+  justify-content: space-between;
+}
+.footer__midle a {
+  text-decoration: none;
+}
+.footer__midle-menu {
+  display: flex;
+  list-style: none;
+  column-gap: 24px;
+}
+.footer__midle-menu--item {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.footer__midle-menu a {
+  color: #fff;
+}
+.footer__midle-mail {
+  align-self: flex-end;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
