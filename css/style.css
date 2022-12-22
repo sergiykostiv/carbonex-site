@@ -642,6 +642,23 @@
     max-width: 354px;
   }
 }
+@media (max-width: 320px) {
+  .news__item-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .news__item-subtitle {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .news__item-btn {
+    display: flex;
+  }
+  .news__item-btn--link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 .contact {
   padding: 80px 0;
   background: #f7f7f7;
