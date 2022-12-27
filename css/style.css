@@ -585,6 +585,10 @@
 }
 .news__item-img {
   padding-bottom: 24px;
+  max-width: 803px;
+}
+.news__item-img-picture {
+  width: 100%;
 }
 .news__item-title {
   font-family: "Play";
@@ -633,13 +637,16 @@
     column-gap: 30px;
     row-gap: 36px;
   }
-  .news__item_4 {
-    display: block;
-  }
 }
 @media (max-width: 768px) {
   .news__item {
     max-width: 354px;
+  }
+  .news__item-btn {
+    display: flex;
+  }
+  .news__item-btn--link {
+    padding: 15px 99px;
   }
 }
 @media (max-width: 320px) {
@@ -657,6 +664,7 @@
   .news__item-btn--link {
     font-size: 14px;
     line-height: 16px;
+    padding: 15px 73px;
   }
 }
 .contact {

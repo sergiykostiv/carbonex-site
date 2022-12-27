@@ -750,6 +750,10 @@
 
         &-img {
             padding-bottom: 24px;
+            max-width: 803px;
+            &-picture {
+                width: 100%;
+            }
         }
 
         &-title {
@@ -806,10 +810,6 @@
             column-gap: 30px;
             row-gap: 36px;
         }
-
-        &__item_4 {
-            display: block;
-        }
     }
 }
 
@@ -821,6 +821,15 @@
 
         &__item {
             max-width: 354px;
+
+            &-btn {
+                display: flex;
+
+                &--link {
+                    padding: 15px 99px;
+
+                }
+            }
         }
     }
 }
@@ -846,6 +855,7 @@
                 &--link {
                     font-size: 14px;
                     line-height: 16px;
+                    padding: 15px 73px;
                 }
             }
         }
