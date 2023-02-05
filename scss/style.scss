@@ -871,7 +871,22 @@
 
     &__top {
         &-logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
             padding-bottom: 18px;
+            column-gap: 40px
+        }
+
+        &-mail {
+            display: none;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+            opacity: 0.5; 
         }
 
         &-rights {
@@ -885,7 +900,6 @@
     }
 
     &__midle {
-
         display: flex;
         flex-direction: column;
         min-width: 705px;
@@ -926,11 +940,10 @@
     }
 
     &__bottom {
-
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        row-gap: 32px;
+        justify-content: flex-end;
+        row-gap: 16px;
 
         a {
             color: #fff;
@@ -967,24 +980,44 @@
             line-height: 22px;
         }
     }
+
+    &__mobile-box {
+        display: none;
+        flex-direction: column;
+        column-gap: 20px;
+        align-items: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 1280px) {
     .footer {
 
-        &__midle {
-            
-            &-menu {
-                display: none;
+        &__top {
+            &-mail {
+                display: block;
             }
+        }
+
+        &__midle {
+            display: none;
         }
     }   
 }
 
 @media (max-width: 768px) {
+    .footer {
+        &__box {
+            display: none;
+        }
 
+        &__mobile-box {
+            display: flex;
+        }
+    }
 }
 
 @media (max-width: 320px) {
-
+    
 }
+
